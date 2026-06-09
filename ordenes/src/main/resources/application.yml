@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: servicio-ordenes
+
+server:
+  port: 8084
+
+eureka:
+  client:
+    httpclient:
+      enabled: true
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true

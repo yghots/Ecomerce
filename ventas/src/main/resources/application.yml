@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: servicio-ventas
+
+server:
+  port: 8085   # o cualquier puerto libre
+
+eureka:
+  client:
+    httpclient:
+      enabled: true           # ← evita el error de TransportClientFactories
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
